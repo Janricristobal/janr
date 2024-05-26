@@ -1,0 +1,234 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  /* background-color: #fff; */
+  /* color: black; */
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.navbar-container {
+  background-color: #fff;
+  box-shadow: 0px 5px 10px 0px #aaa;
+  border-radius: 50px;
+  /* border: 2px solid red; */
+  padding: 15px 20px;
+}
+
+.menu-items {
+  /* border: 2px solid red; */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu-items li {
+  margin-right: 10px;
+}
+
+.menu-items li:last-child {
+  margin-right: 0;
+}
+
+.menu-items a {
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.menu-items a:hover {
+  background-color: #117964;
+  color: #fff;
+}
+.active {
+  background-color: #117964;
+  color: #fff !important;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/flowershop.jpg"); 
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  opacity: 1;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+  color: #fff;
+}
+
+h3 {
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+span {
+  color: #00fa9a;
+}
+
+p {
+  font-size: 1.5em;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.about-card {
+  background-color: #faf8f8;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px 0px #aaa;
+  overflow: hidden;
+  display: flex;
+  max-width: 800px; /* Adjust as needed */
+  border: 10px solid #117964;
+}
+
+.about-card img {
+  max-width: 40%;
+  margin: 30px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.about-content {
+  padding: 20px;
+}
+
+.about-title {
+  font-weight: bold;
+  margin-top: 0;
+  text-align: center;
+}
+.about-sentence {
+  font-size: 1.1em !important;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1000px;
+  width: 700px;
+  /* background-color: #117964; */
+}
+.product-title {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #f8b400;
+}
+
+.product-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0px 5px 10px 0px #aaa;
+  overflow: hidden;
+  max-width: 200px;
+  margin: 0 auto;
+  transition: transform 0.3s ease-in-out;
+}
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 8px;
+  border: 5px solid #117964;
+  border-radius: 15px;
+}
+
+.product-card h2 {
+  margin: 10px 0 0;
+  font-size: 1em;
+  color: #283739;
+}
+
+.contact-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin-top: 40px;
+  box-shadow: 0px 5px 10px 0px #aaa;
+  border-radius: 10px;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-info h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #f8b400;
+}
+.contact-info p {
+  color: #333;
+  font-size: 1em;
+}
+
+.contact-info img {
+  max-width: 500px;
+  height: auto;
+}
